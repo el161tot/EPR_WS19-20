@@ -1,0 +1,29 @@
+package tutorial6;
+
+public class Number1Application {
+	public static void main(String[] args) {
+		Number1Fraction a = new Number1Fraction(5, 9);
+		Number1Fraction b = new Number1Fraction(4, 2);
+
+		a.multiply(b);
+		System.out.println("Mutiply a and b:");
+		a.printFraction();
+		System.out.print("=");
+		a.printFractionReduced();
+
+		a.divide(b);
+		System.out.println("Divide a and b:");
+		a.printFraction();
+		System.out.print("=");
+		a.printFractionReduced();
+
+		a.add(b);
+		System.out.println("Add a and b:");
+		a.printFraction();
+		System.out.print("=");
+		a.printFractionReduced();
+
+		System.out.println("Compare:" + a.compare(b));
+	}
+
+}
